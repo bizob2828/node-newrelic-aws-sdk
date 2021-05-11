@@ -19,5 +19,10 @@ module.exports = [
     type: 'message',
     moduleName: '@aws-sdk/client-sns',
     onRequire: require('./lib/v3-instrumentation').bind(null, 'sns')
+  },
+  {
+    type: 'datastore',
+    moduleName: '@aws-sdk/client-dynamodb',
+    onRequire: require('./lib/v3-instrumentation').bind(null, 'dynamodb')
   }
 ]
