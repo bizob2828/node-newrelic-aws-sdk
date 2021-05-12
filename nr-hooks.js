@@ -24,5 +24,10 @@ module.exports = [
     type: 'datastore',
     moduleName: '@aws-sdk/client-dynamodb',
     onRequire: require('./lib/v3-instrumentation').bind(null, 'dynamodb')
+  },
+  {
+    type: 'generic',
+    moduleName: '@aws-sdk/smithy-client',
+    onRequire: require('./lib/v3-instrumentation').bind(null, 'smithy')
   }
 ]
