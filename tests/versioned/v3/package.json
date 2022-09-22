@@ -11,6 +11,19 @@
         "node": ">=14.0"
       },
       "dependencies": {
+        "@aws-sdk/client-kms": {
+          "versions": "3.128.0"
+        }
+      },
+      "files": [
+        "kms.tap.js"
+      ]
+    },
+    {
+      "engines": {
+        "node": ">=14.0"
+      },
+      "dependencies": {
         "@aws-sdk/client-api-gateway": {
           "versions": ">=3.0.0",
           "samples": 5
@@ -191,5 +204,8 @@
       ]
     }
   ],
-  "dependencies": {}
+  "dependencies": {
+    "@aws-sdk/client-api-gateway": "^3.171.0",
+    "@aws-sdk/client-kms": "^3.171.0"
+  }
 }
